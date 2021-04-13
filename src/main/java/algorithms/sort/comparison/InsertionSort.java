@@ -6,8 +6,11 @@ import algorithms.sort.Sortable;
 
 
 /**
- * 插入排序 原地排序算法 具有稳定性
+ * 插入排序
  * 将剩余元素中的一个插入到前面已有序元素中的合适位置
+ * 特点：
+ * 原地排序算法 具有稳定性
+ * 逆序度即为最终需要移动的次数
  * <p>
  * 适用场景：
  * 非随机数组
@@ -31,10 +34,40 @@ import algorithms.sort.Sortable;
 public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> implements Sortable<T> {
 
     @Override
-    public void sort(T[] arr) {
+    public void sort(T[] arr, boolean order) {
 
+        // 判空和优化
+        if (arr == null || arr.length <= 1) {
+            return;
+        }
+
+        if (order) {
+            sortByAsc(arr);
+        } else {
+            sortByDesc(arr);
+        }
+
+    }
+
+    private void sortByDesc(T[] arr) {
         // 外循环需要循环 N 次，N 为数组长度
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 1; i < arr.length; i++) {
+            T val = arr[i];
+            int j = i;
+            // 内循环 less 每次最多需要比较 i 次，最少需要比较 1 次
+            for (; j > 0 && more(arr[j], arr[j - 1]); j--) {
+
+                // 交换次数最多 i 次，最少交换 0 次
+//                exchange(arr, j, j - 1);
+                arr[j] = arr[j-1];
+            }
+            arr[j] = val;
+        }
+    }
+
+    public void sortByAsc(T[] arr) {
+        // 外循环需要循环 N 次，N 为数组长度
+        for (int i = 1; i < arr.length; i++) {
 
             // 内循环 less 每次最多需要比较 i 次，最少需要比较 1 次
             for (int j = i; j > 0 && less(arr[j], arr[j - 1]); j--) {

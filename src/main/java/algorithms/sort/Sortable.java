@@ -13,6 +13,7 @@ public interface Sortable<T extends Comparable<T>> {
      * 执行具体的排序算法
      *
      * @param arr 待排序数组
+     * @param order 排序方式
      */
-    void sort(T[] arr);
+    void sort(T[] arr, boolean order);
 }

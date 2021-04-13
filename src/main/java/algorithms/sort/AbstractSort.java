@@ -22,6 +22,17 @@ public class AbstractSort<T extends Comparable<T>> {
     }
 
     /**
+     * 比较 a、b 的大小
+     *
+     * @param a 待比较元素
+     * @param b 待比较元素
+     * @return a < b 是返回 false，反之返回 true
+     */
+    public boolean more(T a, T b) {
+        return a.compareTo(b) >= 0;
+    }
+
+    /**
      * 交换两个索引的元素
      *
      * @param arr 要操作的数组
