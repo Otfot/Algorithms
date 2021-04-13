@@ -10,11 +10,10 @@ import algorithms.sort.Sortable;
  * 将剩余元素中的一个插入到前面已有序元素中的合适位置
  * 特点：
  * 原地排序算法 具有稳定性
- * 逆序度即为最终需要移动的次数
+ * 逆序度即为需要移动的次数
  * <p>
  * 适用场景：
  * 非随机数组
- * 订单有序排列（稳定性）
  * <p>
  * 执行效率：
  * N 数组长度
@@ -49,22 +48,6 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> impl
 
     }
 
-    private void sortByDesc(T[] arr) {
-        // 外循环需要循环 N 次，N 为数组长度
-        for (int i = 1; i < arr.length; i++) {
-            T val = arr[i];
-            int j = i;
-            // 内循环 less 每次最多需要比较 i 次，最少需要比较 1 次
-            for (; j > 0 && more(arr[j], arr[j - 1]); j--) {
-
-                // 交换次数最多 i 次，最少交换 0 次
-//                exchange(arr, j, j - 1);
-                arr[j] = arr[j-1];
-            }
-            arr[j] = val;
-        }
-    }
-
     public void sortByAsc(T[] arr) {
         // 外循环需要循环 N 次，N 为数组长度
         for (int i = 1; i < arr.length; i++) {
@@ -78,6 +61,22 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> impl
             }
         }
     }
+
+    private void sortByDesc(T[] arr) {
+
+        for (int i = 1; i < arr.length; i++) {
+
+            // 缓存当前值，替换 exchange 方法
+            T val = arr[i];
+            int j = i;
+
+            for (; j > 0 && more(val, arr[j - 1]); j--) {
+                arr[j] = arr[j - 1];
+            }
+            arr[j] = val;
+        }
+    }
+
 
 }
 
