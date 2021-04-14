@@ -18,6 +18,7 @@ import algorithms.sort.Sortable;
  * N 数组长度
  *
  * 最好情况，平均情况，最坏情况一致，都需要完全遍历剩下的元素， O(n^2)
+ * 移动次数为 N-1 次，比较次数为 （1+(n-1))*(n-1)/2
  *
  * @author otfot
  * @date
