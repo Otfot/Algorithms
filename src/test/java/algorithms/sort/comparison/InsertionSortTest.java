@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * @author otfot
+ * @date 2021/04/13
+ */
 class InsertionSortTest {
 
     Integer[] arr = {3,5,8,6,3,2,1,4,9,0};

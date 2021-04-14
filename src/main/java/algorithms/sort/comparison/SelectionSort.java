@@ -21,7 +21,7 @@ import algorithms.sort.Sortable;
  * 移动次数为 N-1 次，比较次数为 （1+(n-1))*(n-1)/2
  *
  * @author otfot
- * @date
+ * @date 2021/04/14
  */
 public class SelectionSort<T extends Comparable<T>> extends AbstractSort<T> implements Sortable<T> {
 

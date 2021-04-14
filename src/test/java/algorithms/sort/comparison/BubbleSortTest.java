@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author otfot
- * @date
+ * @date 2021/04/14
  */
 class BubbleSortTest {
     Integer[] arr = {3,5,8,6,3,2,1,4,9,0};

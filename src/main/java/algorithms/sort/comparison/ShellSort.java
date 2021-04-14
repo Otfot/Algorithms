@@ -33,7 +33,7 @@ import java.util.List;
  * 步长选择参考 维基百科 https://www.wikiwand.com/en/Shellsort#/Gap%20sequences
  *
  * @author otfot
- * @date
+ * @date 2021/04/14
  */
 public class ShellSort<T extends Comparable<T>> extends AbstractSort<T> implements Sortable<T> {
 

@@ -28,7 +28,7 @@ import algorithms.sort.Sortable;
  * 每次内循环都要遍历完，比较 i 次，交换 i 次, 总共比较和交换 (1 + (n-1))*(n-1) 次，O(n^2)
  *
  * @author otfot
- * @date
+ * @date 2021/04/14
  */
 public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> implements Sortable<T> {
 
