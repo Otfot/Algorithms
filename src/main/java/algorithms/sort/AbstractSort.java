@@ -15,7 +15,7 @@ public class AbstractSort<T extends Comparable<T>> {
      *
      * @param a 待比较元素
      * @param b 待比较元素
-     * @return a < b 是返回 true，反之返回 false
+     * @return a < b 是返回 true，反之返回 false，否则会丧失算法稳定性
      */
     public boolean less(T a, T b) {
         return a.compareTo(b) < 0;
@@ -26,10 +26,10 @@ public class AbstractSort<T extends Comparable<T>> {
      *
      * @param a 待比较元素
      * @param b 待比较元素
-     * @return a < b 是返回 false，反之返回 true
+     * @return a <= b 是返回 false，反之返回 true，否则会丧失算法稳定性
      */
     public boolean more(T a, T b) {
-        return a.compareTo(b) >= 0;
+        return a.compareTo(b) > 0;
     }
 
     /**
