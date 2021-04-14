@@ -7,9 +7,11 @@
 基于比较的排序
 
 - [插入排序](src/main/java/algorithms/sort/comparison/InsertionSort.java) :star::star::star:
+    - 优化版 [希尔排序](src/main/java/algorithms/sort/comparison/ShellSort.java) :star::star::star::star:
 - [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)    :star::star:
 - [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java) :star:
 
+线性排序
 
 ### 小技巧
 
@@ -29,4 +31,5 @@
 
 ## 说明
 
-本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/) 一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏。
+本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/)
+一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏。
