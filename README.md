@@ -1,12 +1,19 @@
 ## 算法练习
 
-本仓库是个人的算法练习仓库，在写算法的过程中分析各算法的优劣及适用场景。
+本仓库是为了练习算法的实现，在代码实现上分析它的复杂度与适用场景，加深学习印象。
 
 ### 排序
 
 基于比较的排序
 
 - [插入排序](src/main/java/algorithms/sort/comparison/InsertionSort.java)
+- [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)
+
+### 小技巧
+
+- 对于插入排序和冒泡排序来说，一般使用插入排序，其数据移动操作（一步）要少于冒泡的数据交换操作（三步）
+
+### 应用场景
 
 稳定性排序算法的适用场景：
 
@@ -20,4 +27,4 @@
 
 ## 说明
 
-本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/) 一书。
+本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/) 一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏。
