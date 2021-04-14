@@ -8,6 +8,8 @@
 
 - [插入排序](src/main/java/algorithms/sort/comparison/InsertionSort.java)
 - [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)
+- [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java)
+
 
 ### 小技巧
 

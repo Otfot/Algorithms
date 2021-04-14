@@ -14,6 +14,7 @@ import algorithms.sort.Sortable;
  * <p>
  * 适用场景：
  * 非随机数组 小规模数据
+ * 相同小数据量下一般使用插入排序
  * <p>
  * 执行效率：
  * N 数组长度
