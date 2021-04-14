@@ -63,20 +63,18 @@ public class SelectionSort<T extends Comparable<T>> extends AbstractSort<T> impl
 
     private void sortByDesc(T[] arr) {
         for (int i = 0; i < arr.length; i++) {
-
-            T val = arr[i];
-            T max = val;
-            int index = i;
+            // 减少多余变量 index
+            int max = i;
 
             for (int j = i; j < arr.length; j++) {
-                if (less(max, arr[j])) {
-                    max = arr[j];
-                    index = j;
+                if (less(arr[max], arr[j])) {
+                    max = j;
                 }
             }
 
-            arr[i] = max;
-            arr[index] = val;
+            T val = arr[i];
+            arr[i] = arr[max];
+            arr[max] = val;
         }
     }
 }
