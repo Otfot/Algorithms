@@ -6,9 +6,9 @@
 
 基于比较的排序
 
-- [插入排序](src/main/java/algorithms/sort/comparison/InsertionSort.java)
-- [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)
-- [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java)
+- [插入排序](src/main/java/algorithms/sort/comparison/InsertionSort.java) :star::star::star:
+- [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)    :star::star:
+- [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java) :star:
 
 
 ### 小技巧
