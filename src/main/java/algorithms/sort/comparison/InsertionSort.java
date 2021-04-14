@@ -48,7 +48,7 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> impl
 
     }
 
-    public void sortByAsc(T[] arr) {
+    private void sortByAsc(T[] arr) {
         // 外循环需要循环 N 次，N 为数组长度
         for (int i = 1; i < arr.length; i++) {
 
