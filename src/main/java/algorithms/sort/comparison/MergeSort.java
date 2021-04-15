@@ -35,6 +35,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSort<T> implemen
     private T[] aux;
 
     @Override
+    @SuppressWarnings("unchecked")
     public void sort(T[] arr, boolean order) {
 
         // 判空和优化
@@ -44,6 +45,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSort<T> implemen
 
         if (order) {
             // 是否应该是 Comparable 类型
+            aux = (T[]) new Comparable[arr.length];
             sortByAsc(arr, 0, arr.length - 1);
         } else {
             sortByDesc(arr, 0, arr.length - 1);
@@ -115,7 +117,7 @@ public class MergeSort<T extends Comparable<T>> extends AbstractSort<T> implemen
     private void mergeByDesc(T[] arr, int lo, int mid, int hi) {
         // 创建临时数组
         int n = hi - lo + 1;
-        T[] temp = (T[]) new Comparable[arr.length];
+        T[] temp = (T[]) new Comparable[n];
 
         int i = lo;
         int j = mid + 1;
