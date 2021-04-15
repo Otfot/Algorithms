@@ -10,6 +10,7 @@
     - 优化版 [希尔排序](src/main/java/algorithms/sort/comparison/ShellSort.java) :star::star::star::star:
 - [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)    :star::star:
 - [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java) :star:
+- [归并排序](src/main/java/algorithms/sort/comparison/MergeSort.java) :star::star::star::star:
 
 线性排序
 
