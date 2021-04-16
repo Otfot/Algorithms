@@ -30,7 +30,7 @@ import algorithms.sort.Sortable;
  * 最坏情况，每次选择的分割点都是最大的或最小的 O(n^2)，极少出现
  *
  * @author otfot
- * @date
+ * @date 2021/04/16
  */
 public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> implements Sortable<T> {
 
@@ -115,7 +115,7 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> implemen
             // 减少了 sort 的函数调用，但实际工作的 partition 函数调用次数并没有减少。
             end = middle - 1;
         }
-        
+
     }
 
     private void optimizationPivot(T[] arr, int start, int end) {
