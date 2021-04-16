@@ -11,6 +11,7 @@
 - [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)    :star::star:
 - [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java) :star:
 - [归并排序](src/main/java/algorithms/sort/comparison/MergeSort.java) :star::star::star::star:
+- [快速排序](src/main/java/algorithms/sort/comparison/QuickSort.java) :star::star::star::star::star:
 
 线性排序
 
@@ -33,4 +34,4 @@
 ## 说明
 
 本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/)
-一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏。
+一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏、极客时间[《常用算法25讲》](https://time.geekbang.org/opencourse/intro/100057601?tab=catalog)专栏。
