@@ -39,7 +39,7 @@ public class AbstractSort<T extends Comparable<T>> {
      * @param i   要交换的数组索引
      * @param j   要交换的数组索引
      */
-    public void exchange(T[] arr, int i, int j) {
+    public void swap(T[] arr, int i, int j) {
         T temp = arr[i];
         arr[i] = arr[j];
         arr[j] = temp;

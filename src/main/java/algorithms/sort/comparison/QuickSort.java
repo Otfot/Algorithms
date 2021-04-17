@@ -64,42 +64,22 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> implemen
 
     private int partitionByAsc(T[] arr, int start, int end) {
 
+        // 选择最后一个为分割点
+        T pivot = arr[end];
 
-        T pivot = arr[start];
 
-        // 使用双指针遍历，优化 partition 操作
         int i = start;
-        int j = end + 1;
 
-        while (true) {
-
-            // 循环过后找到 大于或等于 pivot 位置
-            while (less(arr[++i], pivot)) {
-                if (i == end) {
-                    break;
-                }
+        // 从前向后依次遍历，将小于 pivot 的移动到前面区，则后面的就是大于 pivot 的
+        for (int j = start; j <= end - 1; j++) {
+            if (less(arr[j], pivot)) {
+                swap(arr, j, i);
+                i++;
             }
-
-            // 循环过后，找到 小于或等于 pivot 的位置
-            while (less(pivot, arr[--j])) {
-                if (j == start) {
-                    break;
-                }
-            }
-
-            // 如果 i = j 则找到了一个与 pivot 相等的位置
-            // 如果 i > j 则此时 j 的位置后面都大于 pivot，前面都小于 pivot
-            if (i >= j) {
-                break;
-            }
-
-            // 正常情况下交换两个的位置
-            exchange(arr, i, j);
         }
-        // 当 i >= j 时交换 pivot 与找到的中间位
-        exchange(arr, start, j);
+        swap(arr, i, end);
 
-        return j;
+        return i;
 
     }
 
@@ -123,15 +103,15 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> implemen
         int mid = start + (end - start) / 2;
 
         if (more(arr[start], arr[mid])) {
-            exchange(arr, start, mid);
+            swap(arr, start, mid);
         }
         if (more(arr[start], arr[end])) {
-            exchange(arr, start, end);
+            swap(arr, start, end);
         }
         if (more(arr[mid], arr[end])) {
-            exchange(arr, mid, end);
+            swap(arr, mid, end);
         }
-        exchange(arr, start, mid);
+        swap(arr, start, mid);
     }
 
     private int partitionByDesc(T[] arr, int start, int end) {
@@ -167,10 +147,10 @@ public class QuickSort<T extends Comparable<T>> extends AbstractSort<T> implemen
             }
 
             // 正常情况下交换两个的位置
-            exchange(arr, i, j);
+            swap(arr, i, j);
         }
         // 当 i >= j 时交换 pivot 与找到的中间位
-        exchange(arr, start, j);
+        swap(arr, start, j);
 
         return j;
     }

@@ -57,7 +57,7 @@ public class InsertionSort<T extends Comparable<T>> extends AbstractSort<T> impl
             for (int j = i; j > 0 && less(arr[j], arr[j - 1]); j--) {
 
                 // 交换次数最多 i 次，最少交换 0 次
-                exchange(arr, j, j - 1);
+                swap(arr, j, j - 1);
 
             }
         }

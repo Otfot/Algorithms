@@ -55,8 +55,7 @@ public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> impleme
             //内循环每次遍历长度少 1
             for (int j = 0; j < i; j++) {
                 if (more(arr[j], arr[j + 1])) {
-                    flag = true;
-                    exchange(arr, j, j + 1);
+                    flag = true;swap(arr, j, j + 1);
                 }
 
             }
@@ -75,7 +74,7 @@ public class BubbleSort<T extends Comparable<T>> extends AbstractSort<T> impleme
 
             for (int j = 0; j < arr.length - i - 1; j++) {
                 if (less(arr[j], arr[j + 1])) {
-                    exchange(arr, j, j + 1);
+                    swap(arr, j, j + 1);
                     flag = true;
                 }
             }

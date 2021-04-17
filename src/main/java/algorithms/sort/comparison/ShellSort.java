@@ -3,10 +3,8 @@ package algorithms.sort.comparison;
 import algorithms.sort.AbstractSort;
 import algorithms.sort.Sortable;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -91,7 +89,7 @@ public class ShellSort<T extends Comparable<T>> extends AbstractSort<T> implemen
             for (int i = step; i < arr.length; i++) {
                 // j 最小为 step 因为还需要比较 j - step , 比较两个数小于时就移前
                 for (int j = i; j >= step && less(arr[j], arr[j - step]); j -= step) {
-                    exchange(arr, j, j - step);
+                    swap(arr, j, j - step);
                 }
             }
         }
@@ -104,7 +102,7 @@ public class ShellSort<T extends Comparable<T>> extends AbstractSort<T> implemen
         for (Integer step : steps) {
             for (int i = step; i < arr.length; i++) {
                 for (int j = i; j >= step && more(arr[j], arr[j - step]); j -= step) {
-                    exchange(arr, j, j - step);
+                    swap(arr, j, j - step);
                 }
             }
         }

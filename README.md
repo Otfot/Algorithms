@@ -1,6 +1,6 @@
 ## 算法练习
 
-本仓库是为了练习算法，在代码实现上分析它的复杂度与适用场景，加深学习印象。
+本仓库主要为了练习基础算法与数据结构，加深学习印象。
 
 ### 排序
 
@@ -10,6 +10,7 @@
     - 优化版 [希尔排序](src/main/java/algorithms/sort/comparison/ShellSort.java) :star::star::star::star:
 - [冒泡排序](src/main/java/algorithms/sort/comparison/BubbleSort.java)    :star::star:
 - [选择排序](src/main/java/algorithms/sort/comparison/SelectionSort.java) :star:
+    - 优化版 [堆排序](src/main/java/algorithms/sort/HeapSort.java) :star::star::star::star:
 - [归并排序](src/main/java/algorithms/sort/comparison/MergeSort.java) :star::star::star::star:
 - [快速排序](src/main/java/algorithms/sort/comparison/QuickSort.java) :star::star::star::star::star:
 
