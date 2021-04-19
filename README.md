@@ -15,10 +15,10 @@
 - [快速排序](src/main/java/algorithms/sort/comparison/QuickSort.java) :star::star::star::star::star:
 
 基于特定场景的排序
+
 - [计数排序](src/main/java/algorithms/sort/CountingSort.java) :star::star::star:
     - 通用版 [桶排序](src/main/java/algorithms/sort/BucketSort.java) :star::star::star:
-- [基数排序](src/main/java/algorithms/sort/RadixSort.java)
-
+- [基数排序](src/main/java/algorithms/sort/RadixSort.java) :star::star::star:
 
 线性排序
 
@@ -41,4 +41,5 @@
 ## 说明
 
 本仓库部分代码实现参考[《算法》](https://book.douban.com/subject/19952400/)
-一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126) 专栏、极客时间[《常用算法25讲》](https://time.geekbang.org/opencourse/intro/100057601?tab=catalog)专栏。
+一书、极客时间[《数据结构与算法》](https://time.geekbang.org/column/intro/126)
+专栏、极客时间[《常用算法25讲》](https://time.geekbang.org/opencourse/intro/100057601?tab=catalog)专栏。
