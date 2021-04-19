@@ -4,16 +4,15 @@ import org.junit.jupiter.api.Test;
 import util.RandomData;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
  * @author otfot
- * @date 2021/04/17
+ * @date 2021/04/19
  */
-class HeapSortTest {
+class CountingSortTest {
 
     @Test
     void sort() {
@@ -21,17 +20,10 @@ class HeapSortTest {
         Integer[] arr = RandomData.gInteger();
         Integer[] asc = Arrays.copyOf(arr, arr.length);
         Arrays.sort(asc);
-        Integer[] desc = Arrays.copyOf(arr, arr.length);
-        Arrays.sort(desc, Comparator.reverseOrder());
 
-        Sortable<Integer> heap = new HeapSort<>();
+        CountingSort sort = new CountingSort();
+        sort.sort(arr);
 
-        heap.sort(arr, true);
         assertArrayEquals(asc, arr);
-
-        heap.sort(arr, false);
-        assertArrayEquals(desc, arr);
     }
-
-
 }
