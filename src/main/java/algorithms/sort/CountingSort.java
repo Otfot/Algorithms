@@ -5,6 +5,8 @@ import java.util.Objects;
 /**
  * 计数排序
  * 建立一个数据范围数组，统计每一个数据值出现的次数，得到按数据值排序的结果
+ * 特点：
+ * 具有稳定性
  * <p>
  * 适用范围：
  * 数据范围小，但数据量比较大，排序 key 为整型的数据
@@ -64,7 +66,7 @@ public class CountingSort {
         Integer[] t = new Integer[arr.length];
         // 根据排名排序
         for (int i = arr.length - 1; i >= 0; i--) {
-            // 取出排名
+            // 取出排名, 减 1 是因为排名从 1 开始
             int index = c[arr[i] - min] - 1;
             t[index] = arr[i];
             c[arr[i] - min]--;
