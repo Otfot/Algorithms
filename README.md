@@ -25,7 +25,8 @@
 基于图的搜索
 
 - [广度优先搜索](src/main/java/algorithms/search/graph/BreadthFirstSearch.java)
-  - 进阶版 [Dijkstra 单源最短距离](src/main/java/algorithms/search/graph/Dijkstra.java)
+    - 进阶版 [Dijkstra 单源最短距离](src/main/java/algorithms/search/graph/Dijkstra.java)
+- [深度优先搜索](src/main/java/algorithms/search/graph/DepthFirstSearch.java)
 
 ### 小技巧
 
