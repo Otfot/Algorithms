@@ -28,6 +28,12 @@
     - 进阶版 [Dijkstra 单源最短距离](src/main/java/algorithms/search/graph/Dijkstra.java)
 - [深度优先搜索](src/main/java/algorithms/search/graph/DepthFirstSearch.java)
 
+基于树的搜索
+
+- [二分搜索](src/main/java/algorithms/search/tree/BinarySearch.java)
+
+### 算法思想
+
 ### 小技巧
 
 - 对于插入排序和冒泡排序来说，一般使用插入排序，其数据移动操作（一步）要少于冒泡的数据交换操作（三步）
