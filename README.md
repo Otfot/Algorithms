@@ -32,6 +32,13 @@
 
 - [二分搜索](src/main/java/algorithms/search/tree/BinarySearch.java)
 
+### 数据结构
+
+树相关结构
+
+- [BST 二叉搜索树](src/main/java/datastructure/BinarySearchTree.java)
+    - [进阶版 AVL 平衡二叉树](src/main/java/datastructure/AdelsonVelskyAndLandisTree.java)
+
 ### 算法思想
 
 ### 小技巧

@@ -21,6 +21,10 @@ public class Node <T extends Comparable<T>> {
 
         @Getter
         @Setter
+        private int high;
+
+        @Getter
+        @Setter
         private datastructure.Node<T> left;
 
         @Getter
