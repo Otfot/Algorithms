@@ -39,6 +39,10 @@
 - [BST 二叉搜索树](src/main/java/datastructure/BinarySearchTree.java)
     - [进阶版 AVL 平衡二叉树](src/main/java/datastructure/AdelsonVelskyAndLandisTree.java)
 
+链表相关结构
+
+- [快表 SkipList](src/main/java/datastructure/SkipList.java)
+
 ### 算法思想
 
 ### 小技巧
