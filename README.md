@@ -32,6 +32,14 @@
 
 - [二分搜索](src/main/java/algorithms/search/tree/BinarySearch.java)
 
+字符串匹配
+
+单模式串匹配
+
+- [BF 暴力匹配](src/main/java/algorithms/search/string/BruteForce.java)
+- [RK 哈希](src/main/java/algorithms/search/string/RabinKarp.java)
+- [BM 坏字符与好后缀](src/main/java/algorithms/search/string/BoyerMoore.java)
+
 ### 数据结构
 
 树相关结构
