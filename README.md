@@ -39,6 +39,7 @@
 - [BF 暴力匹配](src/main/java/algorithms/search/string/BruteForce.java)
 - [RK 哈希](src/main/java/algorithms/search/string/RabinKarp.java)
 - [BM 坏字符与好后缀](src/main/java/algorithms/search/string/BoyerMoore.java)
+- [KMP 匹配前缀的主串最长后缀子串与模式串的最长前缀字串](src/main/java/algorithms/search/string/KnuthMorrisPratt.java)
 
 ### 数据结构
 
